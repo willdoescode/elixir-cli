@@ -11,11 +11,11 @@ defmodule ElixirCli.CLI do
     Enum.random(["rock", "paper", "scissors"])
   end
 
-  @comp "You lost computer played: "
+  @message "You lost computer played: "
 
-  def winner("paper", "rock"), do: @comp <> "paper"
-  def winner("rock", "scissors"), do: @comp <> "rock"
-  def winner("scissors", "paper"), do: @comp <> "scissors"
+  def winner("paper", "rock"), do: @message <> "paper"
+  def winner("rock", "scissors"), do: @message <> "rock"
+  def winner("scissors", "paper"), do: @message <> "scissors"
 
   def winner(computer, you) when computer == you, do: "Tie: #{computer}"
 
